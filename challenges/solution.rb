@@ -55,6 +55,7 @@ birthdate = gets
  
 # 3. get birth path number using the method & assign to variable
 birth_path_num = get_birth_path_num(birthdate)
+puts "#{birth_path_num.class} "
  
 # 5. get the correct message using the method & assign to variable
 message = get_message(birth_path_num)
