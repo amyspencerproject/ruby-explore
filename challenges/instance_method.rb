@@ -43,7 +43,7 @@ class Pet
     end
 end
 
-freddo = Pet.new
+freddo = Pet.new 
 freddo.set_type= "ferret"
 freddo.set_name= "Fredo"
 freddo.set_sound= "sqeeeeeeee"
@@ -52,8 +52,8 @@ freddo_name = freddo.get_name
 freddo_sound = freddo.get_sound
 
 Pet.current_count
-puts Pet.inspect
-puts freddo.inspect
+# puts Pet.inspect
+# puts freddo.inspect
 
 budgie = Pet.new
 budgie.set_type= "parrot"
@@ -76,6 +76,7 @@ dali_sound = dali.get_sound
 Pet.current_count
 
 puts "#{freddo_name} is a #{freddo_type} who says #{freddo_sound}"
+puts "#{Pet.current_count} "
 puts "#{budgie_name} is a #{budgie_type} who says #{budgie_sound}"
 puts "#{dali_name} is a #{dali_type} who says #{dali_sound}"
 
