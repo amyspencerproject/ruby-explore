@@ -14,9 +14,13 @@ class Blog
 
     def self.publish
         @@blog_array.each do |post|
-            puts "#{post.title} "
+            puts "Title: #{post.title}"
+            puts "By: #{post.author}"
+            puts "Published: #{post.created_at}"
+            puts "#{post.content}\n\n"
         end
     end
+end
 
     # create a class that has all variables/data necessary for a blog post
     class Post < Blog
@@ -87,9 +91,9 @@ class Blog
             Post.add(self)
         end    
     end
-end
 
 Post.create
+blog_array=Post.all
 Post.publish
 
     # puts "#{Post.post.title}"
