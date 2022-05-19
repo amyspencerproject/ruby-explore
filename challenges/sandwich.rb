@@ -9,12 +9,18 @@ doc = Nokogiri::HTML(URI.open("https://recipes.sainsburys.co.uk/recipes/italian-
 # search = doc.search('span.ingredient-measurement')
 # p search
 
-# list_item = doc.css('.ingredient-label').inner_html
-list_unit= doc.css('.ingredient-measurement').children[1]
+list_item = doc.css('.ingredient-label')
+# list_unit= doc.css('.ingredient-measurement').children[1]
+# p list_item.class
 # p list_item
 # p list_item.class
-p list_unit
+# p list_unit
 # p list_unit.class
 
+# loop through the inner_html of the items in the list
 
-# put that data into an array or hash and then publish it
+list_item.each do |x|
+    puts x.inner_html     
+end
+
+

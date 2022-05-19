@@ -81,16 +81,87 @@
 
 # # Bug.current_count
 
-class Greeter
-    def initialize(name)
-      @name = name
-    end
+# class Greeter
+#     def initialize(name)
+#       @name = name
+#     end
   
-    def say_hello
-      "Hello #{@name}"
-    end
+#     def say_hello
+#       "Hello #{@name}"
+#     end
+#   end
+  
+#   greeting = Greeter.new("Amy")
+#   puts greeting.say_hello
+#   puts greeting.inspect
+
+class Post 
+
+  def self.create
+      # ask for user input
+      post = new
+      puts "What is your post title?"
+      post.title=gets.chomp
+
+      puts "What is your author name?"
+      post.author=gets.chomp
+
+      puts "Write your blog post now!"
+      post.content=gets.chomp
+
+      post.created_at=Time.now
+
+      # clever way to push the data array
+      # post.save
+
+      # ask user for another post
+      puts "Do you want to create another blog post? Y/N"
+      post_again=gets.downcase.chomp
+
+      if (post_again == "y" )
+          create
+      else 
+          puts puts "See you next time!"
+      end
+  end
+      
+
+  def title
+      @title
   end
   
-  greeting = Greeter.new("Amy")
-  puts greeting.say_hello
-  puts greeting.inspect
+  def title=(title) # these are setter methods and always takes an argument
+      @title = title # don't forget to set the instance variable
+  end
+
+  def author
+      @author 
+  end
+
+  def author=(author)
+      @author = author
+  end
+  
+  def created_at
+      @created_at
+  end
+  
+  def created_at=(created_at)
+      @created_at = created_at
+  end
+  
+  def content
+      @content
+  end
+  
+  def content=(content)
+      @content = content
+  end
+
+  # def save
+  #     # clever way to push data to an array
+  #     Post.add(self)
+  # end    
+end
+
+Post.create
