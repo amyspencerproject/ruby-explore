@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'twilio-ruby'
 
-account_sid = "AC0875568be930d0c3097849d093e9c0ce" # Your Test Account SID from www.twilio.com/console/settings
-auth_token = "042ee7b1d5d2ea07edb277e3197ab907"   # Your Test Auth Token from www.twilio.com/console/settings
+account_sid = "AC" # Your Test Account SID from www.twilio.com/console/settings
+auth_token = ""   # Your Test Auth Token from www.twilio.com/console/settings
 
 
 puts "Ask me a question?"
