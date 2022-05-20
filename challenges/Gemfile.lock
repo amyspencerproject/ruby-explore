@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    faraday (2.3.0)
+      faraday-net_http (~> 2.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-net_http (2.0.3)
+    nokogiri (1.13.6-arm64-darwin)
+      racc (~> 1.4)
+    racc (1.5.1)
+    ruby2_keywords (0.0.5)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  faraday (~> 2.3)
+  nokogiri (~> 1.13, >= 1.13.6)
+
+BUNDLED WITH
+   2.3.14

@@ -1,7 +1,8 @@
 require 'nokogiri'
 require 'open-uri'
+require 'faraday'
 
-# use Nokogiri to pull inner html for ingredients list from recipe website
+# use Nokogiri to pull inner html for magic8 ball answers from wikipedia
 doc = Nokogiri::HTML(URI.open("https://en.wikipedia.org/wiki/Magic_8_Ball#Possible_answers"))
 
 # puts doc.seach("h2")
