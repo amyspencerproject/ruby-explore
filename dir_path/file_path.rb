@@ -1,0 +1,6 @@
+puts "__FILE__ = #{__FILE__}"
+puts "Absolute pathname = #{File.expand_path(__FILE__)}"
+puts "Absolute directory = #{File.dirname(File.expand_path(__FILE__))}"
+puts "Alternative absolute directory = #{File.expand_path(File.dirname(__FILE__))}"
+puts "Another absolute directory = #{File.dirname(File.realpath(__FILE__))}"
+puts "Working directory = #{Dir.pwd}"
